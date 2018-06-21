@@ -1,0 +1,78 @@
+﻿@import url(font-awesome.css);
+@import url(../fonts/Vazir/vazir.css);
+body {
+    direction:rtl;
+    font-family:Vazir;
+    padding-bottom:50px;
+}
+.main-wrapper, .wrapper{
+    margin-top:70px;
+}
+.main-wrapper div.col-sm-6{
+    padding:15px;
+}
+   
+.ad{
+    text-align:center;
+    /*changed border*/
+    border:1px solid transparent;
+    border-left:1px solid #ddd;
+    padding-bottom:20px;
+    min-height:300px;
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .ad:nth-child(2n) {
+        border-left: 0;
+    }
+}
+@media(min-width: 992px) {
+    .ad:nth-child(3n) {
+        border-left: 0;
+    }
+}
+
+    .ad:hover {
+        border: 1pt solid #ddd;
+        cursor:pointer;
+    }
+
+.ad h3{
+    font-size:0.92em;
+}
+.ad img{
+    width:90%;
+    /*border-radius:7px;*/
+}
+.ad footer .row div:first-child{
+    font-weight:bold;
+    text-align:left;
+    border-left:1px solid #888;
+}
+.ad footer .row div:last-child {
+    text-align: right;
+}
+.ad footer {
+    margin-top:15px;
+}
+.navbar-brand img{
+    height:30px;
+    margin-left: -15px;
+    margin-top:-6px;
+}
+.loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(100,100,100,0.4);
+}
+.loader img{
+    width:30px;
+    position:fixed;
+    top:50vh;
+    margin-top:-15px;
+    right:50vw;
+    margin-right:-15px;
+}
